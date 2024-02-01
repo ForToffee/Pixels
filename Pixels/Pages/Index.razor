@@ -1,0 +1,39 @@
+﻿@page "/"
+@inject IJSRuntime JS
+<h3>Astro Pi/SenseHat Pixel Art Python Generator</h3>
+<div style=" display:flex;justify-content:space-evenly">
+    <div >    
+        <div class="palette">
+        @foreach (KeyValuePair<string,System.Drawing.Color> c in colours)
+        {
+            <div class="psquare" style="background:@HTMLHex(c.Value)"
+            @onclick="() => ColourClick(c.Key)">
+                <h5 class="smchar">@c.Key</h5>
+            </div>
+
+                }
+        </div>
+        <div style="height:75%">
+            <textarea style="font-family: 'Courier';height: 100%;width: 100%;box-sizing: border-box;">@GetCode()</textarea>
+        </div>
+    </div>
+    <div>
+        <div class="board">
+            @for (int i = 0; i < pixels.Length; i++)
+            {
+                int idx = i;
+                <div class="square" style="background:@HTMLHex(pixels[i].color)"
+                @onclick="()=> PixelClick(idx)">
+                    <h5 class="char">@pixels[i].letter</h5>
+                </div>
+            }
+        </div>
+        <div>
+            Selected colour: <div class="psquare" style="background:@HTMLHex(selectedColour.color)">
+                <h5 class="smchar">@selectedColour.letter</h5>
+            </div>
+        </div>
+    </div>
+
+
+</div>
