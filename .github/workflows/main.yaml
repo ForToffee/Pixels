@@ -14,9 +14,9 @@ jobs:
       with:
         dotnet-version: 6.0.301
     - name: Publish .NET Core Project
-      run: dotnet publish BankCapitalWasm/BankCapitalWasm.csproj -c Release -o release --nologo
-    - name: Change base-tag in index.html from / to FractionalReserveBankingTest
-    - run: sed -i 's/<base href="\/" \/>/<base href="\/FractionalReserveBankingTest\/" \/>/g' release/wwwroot/index.html
+      run: dotnet publish Pixles/Pixels.csproj -c Release -o release --nologo
+    - name: Change base-tag in index.html from / to Pixels
+      run: sed -i 's/<base href="\/" \/>/<base href="\/Pixels\/" \/>/g' release/wwwroot/index.html
     
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
