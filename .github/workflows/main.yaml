@@ -8,11 +8,11 @@ jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.301
+        dotnet-version: 6.0.x
     - name: Publish .NET Core Project
       run: dotnet publish Pixles/Pixels.csproj -c Release -o release --nologo
     - name: Change base-tag in index.html from / to Pixels
