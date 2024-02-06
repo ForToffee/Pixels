@@ -2,7 +2,6 @@
 *[b-yuao7uew5n] {
     padding: 0;
     margin: 0;
-    font-family: 'Itim', cursive;
 }
 
 h1[b-yuao7uew5n] {
@@ -22,7 +21,7 @@ h1[b-yuao7uew5n] {
 
 .palette[b-yuao7uew5n] {
     width: 22rem;
-    height: 22rem;
+    height: 26rem;
     margin: auto;
     border: 1px solid black;
     display: flex;
@@ -38,7 +37,10 @@ h1[b-yuao7uew5n] {
     border-radius: 1px;
     opacity: 80;
 }
-
+.psquare:hover[b-yuao7uew5n] {
+    background: #ecaf4f;
+    cursor: pointer;
+}
 
 .square[b-yuao7uew5n] {
     width: 5rem;
