@@ -1,7 +1,7 @@
 ﻿@page "/"
 @inject IJSRuntime JS
-<h3>Astro Pi/SenseHat Pixel Art Python Generator</h3>
-<div style=" display:flex;justify-content:space-evenly">
+<h3 style="text-align:center">Astro Pi/SenseHat Pixel Art Python Generator</h3>
+<div style=" display:flex;justify-content:space-evenly;margin-top:1rem">
     <div >    
         <div class="palette">
         @foreach (KeyValuePair<string,System.Drawing.Color> c in colours)
@@ -12,6 +12,11 @@
             </div>
 
                 }
+            <div style=" display:flex;justify-content:space-evenly;ver">
+                Selected colour: <div class="psquare" style="background:@HTMLHex(selectedColour.color)">
+                    <h5 class="smchar">@selectedColour.letter</h5>
+                </div>
+            </div>
         </div>
         <div style="height:75%">
             <textarea style="font-family: 'Courier';height: 100%;width: 100%;box-sizing: border-box;">@GetCode()</textarea>
@@ -28,11 +33,7 @@
                 </div>
             }
         </div>
-        <div>
-            Selected colour: <div class="psquare" style="background:@HTMLHex(selectedColour.color)">
-                <h5 class="smchar">@selectedColour.letter</h5>
-            </div>
-        </div>
+        <button class="btn btn-primary" style="margin-top:1rem" type="button" @onclick="ResetBoard">Reset Pixels</button>
     </div>
 
 

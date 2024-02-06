@@ -44,11 +44,7 @@ namespace Pixels.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            selectedColour = new Pixel();
-            for (int i = 0; i < 64; ++i) 
-            {
-                pixels[i] = selectedColour;
-            }
+            ResetBoard();
         }
 
         private Pixel selectedColour { get; set; }
@@ -125,5 +121,15 @@ namespace Pixels.Pages
         }
 
         private string HTMLHex(Color color) => $"#{color.R:X2}{color.G:X2}{color.B:X2}";
+
+        private void ResetBoard()
+        {
+            selectedColour = new Pixel();
+            for (int i = 0; i < 64; ++i)
+            {
+                pixels[i] = selectedColour;
+            }
+        }
     }
+    
 }
