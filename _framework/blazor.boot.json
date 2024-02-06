@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Pixels",
   "resources": {
-    "hash": "sha256-3Ei7I2pFzdyydP80HlXslPAqCbf+ISfwognkTYHXH24=",
+    "hash": "sha256-jrIR5EMXRmASlt2Y6Eg9p4ublmko1Ydgj2WMSY7mHDQ=",
     "runtime": {
       "dotnet.6.0.26.y2dcypma5i.js": "sha256-q4SPzhRyXlR1HXK6WAbwJRNI6jvBBYUisoHeH0+eRyM=",
       "dotnet.timezones.blat": "sha256-klrDSl9zL0jGM+Fc+fiCLbJ5Z7U2C9fTDn0+NmIH9VY=",
@@ -25,7 +25,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-QRewYnpJ6vl8gGMXBS2gN++/sQ9hKcuv+rhy586Bbxs=",
       "Microsoft.JSInterop.dll": "sha256-VUwP0xOtOuo2PEVJEUgjL05xZ1zKVfGSYdXQ9CE6rpM=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-0Y5OboSlQHskAy+/GfH2W4eL5C2XSf8f11P6AjNIXhI=",
-      "Pixels.dll": "sha256-Doe0c6m1BuwixoAQIfI0F2wZ/JQvupu0ooz8y0cfQdw=",
+      "Pixels.dll": "sha256-y7jIfgABKuczQzDiNxaKa/bi58wrmorsEWSaTrjLOjY=",
       "System.Collections.Concurrent.dll": "sha256-fkRxqm/mBt+ipHgQPzq2k5iWjqRM0pmtwOn4i7jO54w=",
       "System.Collections.dll": "sha256-fMMKviLAC2YS1eLqhlshxuk2W36xFFbWjs61p2n4XVs=",
       "System.ComponentModel.dll": "sha256-rSuQQt2eFQUBNfgVjkANPtpVu946wCsRuuBtNRAN9go=",
